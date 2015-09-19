@@ -1,0 +1,18 @@
+apply plugin: 'war'
+
+repositories { 
+  mavenCentral()
+}
+
+sourceSets { 
+  main { 
+    java { 
+      srcDir 'src/main'
+    }
+  }
+
+}
+
+dependencies { 
+  compile 'org.glassfish.jersey.bundles:jaxrs-ri:2.21'
+}
